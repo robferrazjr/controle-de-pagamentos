@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Controle de Empréstimos</title>
+
+        <!-- XLSX -->
+        <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Tabela Controle</h1>
+
+            <div class="form-box">
+                <div class="grid">
+                    <div>
+                        <label>Nome</label>
+                        <input type="text" id="nome" />
+                    </div>
+
+                    <div>
+                        <label>Data do Empréstimo</label>
+                        <input type="date" id="dataEmprestimo" />
+                    </div>
+
+                    <div>
+                        <label>Data Limite</label>
+                        <input type="date" id="dataLimite" />
+                    </div>
+
+                    <div>
+                        <label>Valor Emprestado</label>
+                        <input type="number" id="valor" step="0.01" />
+                    </div>
+
+                    <div>
+                        <label>Tipo de Juros</label>
+                        <select id="tipoJuros">
+                            <option value="percentual">Percentual (%)</option>
+                            <option value="fixo">Valor Fixo (R$)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Juros</label>
+                        <input type="number" id="juros" step="0.01" />
+                    </div>
+                </div>
+
+                <br />
+
+                <button class="btn-add" onclick="adicionarEmprestimo()">
+                    Adicionar
+                </button>
+            </div>
+
+            <div style="margin-bottom: 15px">
+                <input
+                    type="text"
+                    id="buscaNome"
+                    placeholder="Pesquisar por nome..."
+                    onkeyup="atualizarTabela()"
+                    style="
+                        width: 100%;
+                        padding: 12px;
+                        border-radius: 8px;
+                        border: 1px solid #ccc;
+                        font-size: 15px;
+                    "
+                />
+            </div>
+            <button class="btn-export" onclick="exportarExcel()">
+                Exportar para Excel
+            </button>
+
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data Empréstimo</th>
+                        <th>Data Limite</th>
+                        <th>Valor Inicial</th>
+                        <th>Juros</th>
+                        <th>Total</th>
+                        <th>Pago</th>
+                        <th>Em Aberto</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h3 id="modalTitulo"></h3>
+
+                <input type="number" id="modalInput" step="0.01" />
+
+                <div class="modal-botoes">
+                    <button id="modalSalvar">Salvar</button>
+
+                    <button id="modalCancelar">Cancelar</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
