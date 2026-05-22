@@ -2,15 +2,15 @@ Sistema desktop para controle de empréstimos pessoais desenvolvido com HTML, CS
 Permite cadastrar empréstimos, controlar pagamentos, calcular juros automaticamente ao melhor estilo agiota.
 
 ---Funcionalidades---
-> Cadastro de empréstimos
-> Controle de pagamentos
-> Cálculo automático de juros
-> Juros em percentual ou valor fixo
-> Controle de valores em aberto
-> Exportar os dados para Excel
-> Ferramenta de busca por nome
-> Salvamento local em localStorage
-> Funciona offline
+Cadastro de empréstimos
+Controle de pagamentos
+Cálculo automático de juros
+Juros em percentual ou valor fixo
+Controle de valores em aberto
+Exportar os dados para Excel
+Ferramenta de busca por nome
+Salvamento local em localStorage
+Funciona offline
 
 ---Destaques Visuais---
 🟢 Em dia
@@ -20,11 +20,11 @@ Permite cadastrar empréstimos, controlar pagamentos, calcular juros automaticam
 <img width="1170" height="715" alt="image" src="https://github.com/user-attachments/assets/8948a577-4a39-420d-96b1-4d8cae5dcf1d" />
 
 ---Tecnologias Utilizadas---
-HTML5;
-CSS3;
-JavaScript;
-Electron;
-XLSX.js.
+HTML5
+CSS3
+JavaScript
+Electron
+XLSX.js
 
 ---Como Executar o Projeto---
 1. Clone o repositório;
