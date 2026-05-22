@@ -17,7 +17,8 @@ Permite cadastrar empréstimos, controlar pagamentos, calcular juros automaticam
 * 🔴 Vencido
 * 🔵 Quitado
 
-<img width="1170" height="715" alt="image" src="https://github.com/user-attachments/assets/8948a577-4a39-420d-96b1-4d8cae5dcf1d" />
+<img width="1159" height="703" alt="image" src="https://github.com/user-attachments/assets/c07a3b2b-042b-486a-a27d-3d1b01d7ecdd" />
+
 
 ---Tecnologias Utilizadas---
 * HTML5
