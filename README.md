@@ -12,7 +12,7 @@ Permite cadastrar empréstimos, controlar pagamentos, calcular juros automaticam
 * Salvamento local em localStorage
 * Funciona offline 
 
----Destaques Visuais---
+--- Destaques Visuais ---
 * 🟢 Em dia
 * 🔴 Vencido
 * 🔵 Quitado
@@ -20,21 +20,21 @@ Permite cadastrar empréstimos, controlar pagamentos, calcular juros automaticam
 <img width="1159" height="703" alt="image" src="https://github.com/user-attachments/assets/c07a3b2b-042b-486a-a27d-3d1b01d7ecdd" />
 
 
----Tecnologias Utilizadas---
+--- Tecnologias Utilizadas ---
 * HTML5
 * CSS3
 * JavaScript
 * Electron
 * XLSX.js
 
----Como Executar o Projeto---
+--- Como Executar o Projeto ---
 1. Clone o repositório;
 2. Instale as dependências: npm install;
 3. Execute o projeto: npm start;
 4. Gerar executável (.exe): npm run build (será gerado na pasta ./dist);
    ou apenas rode o index.html no seu live server ou localhost para usar pelo navegador.
 
----Melhorias Futuras---
+--- Melhorias Futuras ---
 * Login com senha
 * Banco de dados
 * Backup em nuvem
